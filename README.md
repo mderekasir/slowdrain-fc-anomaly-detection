@@ -74,9 +74,6 @@ buffer-to-buffer credit was zero. Map your switch's equivalent counter onto it.
 
 **Derek Asir Muthurajan Caleb**: author, owner, and publisher.
 
-This is an independent implementation of the ideas in the article. It contains no proprietary
-code, data, counter definitions, or thresholds from any vendor. All bundled data is synthetic.
-
 ## License
 
 Apache License 2.0. See [LICENSE](LICENSE).
