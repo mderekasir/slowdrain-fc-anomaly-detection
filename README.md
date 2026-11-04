@@ -1,9 +1,5 @@
 # slowdrain: catch a slow-drain device before it congests the fabric
 
-Companion code for the article **"Catching the Slow Drain Early: Predictive IOPS/Latency Anomaly
-Detection for Fibre Channel Fabrics with PyTorch and Scikit-learn"** (Derek Asir Muthurajan Caleb,
-2026).
-
 Fixed-threshold congestion monitoring catches gross credit stalls, but it has no idea what is
 normal for *this* port. An HBA that slowly degrades to around 60% of line rate stays under fixed
 limits until the congestion is already spreading. `slowdrain` learns a baseline for each port from
