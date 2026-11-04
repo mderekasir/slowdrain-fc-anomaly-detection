@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "slowdrain"
+version = "0.1.0"
+description = "Predictive slow-drain / IOPS-latency anomaly detection for Fibre Channel fabrics (Isolation Forest + autoencoder)"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Derek Asir Muthurajan Caleb" }]
+maintainers = [{ name = "Derek Asir Muthurajan Caleb" }]
+requires-python = ">=3.9"
+keywords = ["Fibre Channel", "SAN", "slow drain", "anomaly detection", "Isolation Forest", "autoencoder", "PyTorch", "scikit-learn"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: Apache Software License",
+  "Topic :: System :: Networking :: Monitoring",
+]
+
+[project.optional-dependencies]
+ml = ["scikit-learn>=1.0", "torch>=2.0"]
+snmp = ["pysnmp>=4.4"]
+
+[project.scripts]
+slowdrain = "slowdrain.cli:main"
+
+[tool.setuptools]
+packages = ["slowdrain"]
